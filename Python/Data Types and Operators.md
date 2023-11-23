@@ -40,6 +40,3 @@ B is not an Integer
 9.8 is not an Integer
 -0.1 is not an Integer
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMjM1MTkwNV19
--->
