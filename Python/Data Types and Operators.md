@@ -31,7 +31,7 @@ They probably don't seem as obvious as number, word and letter that we discussed
 ### `int` (Integer)
 If you are already familiar with the concept of Integers in Basic Mathematics, then you're good, it basically means the same thing here. All positive and negative whole numbers belong to this category of values called Integers.
 
-In Python Integers are represented by the `int` data type.
+In Python, Integers are represented by the `int` data type.
 
 Look at these examples:
 ```
@@ -52,18 +52,60 @@ $4.0 = 4$
 but Python doesn't accept any number with a decimal point as an `int`.
 
 So this means, an integer in Python is any positive or negative whole number without any decimal points.
-An integer can be decimal (base 10), binary (base 2), octal (base 8) and hexadecimal (base 16), but you have add some special prefixes for Python to understand.
 
-Here's what I mean, if you tried to do a binary addition like this in Python `1 + 11`, Python would think you're trying to add two decimal integers so the result would be `12` and not `4` (`100`). By default, Python sees all integers as decimal, so you have to explicitly tell Python what number system you want an integer to be in, by using some special prefixes.
+### `float` (Floating Point)
+The concept of floating point numbers might not seem familiar to you if this is your first time learning a programming language, but you can just think of them as numbers with a decimal point.
 
-| Number system | Prefix |
-|:--------:| -------------:|
-| Binary | `0b` |
-| Octal | `0o` |
-| Hexadecimal | `0x` |
+In Python, floating point numbers are represented by the `float` data type.
 
-Now let's try binary addition again with the prefixes this time
+Look at these examples:
 ```
->>> 0b1 + 0b11
-4
+42 is not a float
+42.0 is a float
+3.14 is a float
+"float" is not a float
+-9.8 is a float
+```
+
+That wasn't too hard was it? Let's continue.
+
+### `str` (String)
+Strings are used to represent text, you can think of a string as a sequence of single characters.
+
+For example:
+
+"data" is a string, it is a sequence of letters `d, a, t, a`.
+
+"42" is a string, it is a sequence of numbers `4, 2`
+
+Now you're probably thinking
+> **Wait, WHAT!!**
+>
+> "42" is a string? shouldn't that be an integer?
+
+There is a difference between `42` and `"42"` in Python, anything that is enclosed by single or double quotes is considered a string. So, if you put an integer or a float in quotes, it now becomes a string.
+
+In Python, strings are represented by the `str` data type.
+
+Look at these examples:
+```
+"data" is a str
+'word' is a str
+'42' is a str
+pineapple is not a str
+23.0 is not a str
+True is not a str
+"False" is a str
+```
+
+### `bool` (Boolean)
+Booleans are used to represent only two values `True` and `False`, these are logical values used to check if certain conditions are met during the execution of our program. We will be using these values a lot, directly and indirectly, when we start learning about conditionals in Python.
+
+In Python, Booleans are represented by the `bool` data type.
+
+Look at these examples:
+```
+"True" is not a bool
+False is a bool
+True is a bool
 ```
